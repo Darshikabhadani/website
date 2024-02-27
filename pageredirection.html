@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--exaple 1-->
+   <script>
+    function redirect()
+    {
+        window.location="http://www.google.com";
+    }
+   </script> 
+   <form>
+    <input type="button" value="redirect" onclick="redirect();">
+   </form>
+
+   <!--example 2-->
+   <script>
+    function redirect()
+    {
+        window.location="http://www.google.com";
+    }
+    document.write("you will be redirected to main page in 0 sec.");
+    setTimeout('redirect()',100000);
+   </script>
+</body>
+</html>
